@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>浏览器书签小工具</title>
+	<link rel="stylesheet" type="text/css" href="../css/screen.css">
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?fb678e2e09c516d28e239c1d72ca9f31";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<a href="https://note286.github.io/">
+			<img id="forkme" src="../img/home-button.png">
+		</a>
+
+		<div id="header">
+			<h1>浏览器书签小工具</h1>
+			<br />
+			<p id="subtitile">
+				网页翻译和二维码生成的浏览器书签工具
+			</p>
+		</div>
+
+		<div id="information">
+			<ul>
+				<li>
+					<div class="group row">
+						<p>
+							<b>使用</b>：按提示拖动到收藏夹，也就是书签栏；或者随便保存一个书签，然后修改书签地址为拖动按钮的下方的代码，标题随便起。<br />
+							<b>原理</b>：其中翻译均调用了各自网站的接口，二维码功能调用了百度网盘的接口。其中二维码功能可自行修改二维码大小，默认长宽均为350。<br />
+							<b>声明</b>：以下代码均本人自行编写，大家随意传播和使用。<br />
+							<b>感谢</b>：<a href="http://tool.oschina.net/encode?type=4" target="_blank">开源中国</a>提供在线URL编码功能；<a href="http://fanyi.baidu.com/" target="_blank">百度</a>、<a href="http://fanyi.youdao.com/" target="_blank">有道</a>、<a href="https://translate.google.com.hk/" target="_blank">谷歌</a>提供翻译功能；<a href="http://just998.com/bijia" target="_blank">买买买</a>提供图片素材。
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="group row">
+						<h2>百度网页翻译</h2>
+						<br />
+						<div align="center">
+							<a href="javascript:(function()%7Bvar%20url=window.location.href;window.open(%22http://fanyi.baidu.com/transpage?query=%22+url+%22&source=url&ie=utf8&from=auto&to=zh&render=1%22);%7D)();" style="background:url(bookmark.png);display:block;width:239px;height:56px;">
+								<span style="font-size:0;filter:alpha(opacity=0);">百度网页翻译</span>
+							</a>
+							<br />
+							<pre>javascript:(function()%7Bvar%20url=window.location.href;window.open(%22http://fanyi.baidu.com/transpage?query=%22+url+%22&source=url&ie=utf8&from=auto&to=zh&render=1%22);%7D)();</pre>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="group row">
+						<h2>有道网页翻译</h2>
+						<br />
+						<div align="center">
+							<a href="javascript:(function()%7Bvar%20url=window.location.href;window.open(%22http://fanyi.youdao.com/WebpageTranslate?keyfrom=webfanyi.top&url=%22+url+%22&type=AUTO%22);%7D)();" style="background:url(bookmark.png);display:block;width:239px;height:56px;">
+								<span style="font-size:0;filter:alpha(opacity=0);">有道网页翻译</span>
+							</a>
+							<br />
+							<pre>javascript:(function()%7Bvar%20url=window.location.href;window.open(%22http://fanyi.youdao.com/WebpageTranslate?keyfrom=webfanyi.top&url=%22+url+%22&type=AUTO%22);%7D)();</pre>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="group row">
+						<h2>谷歌网页翻译</h2>
+						<br />
+						<div align="center">
+							<a href="javascript:(function()%7Bvar%20url=window.location.href;window.open(%22https://translate.google.com.hk/translate?hl=zh-CN&sl=auto&tl=zh-CN&u=%22+url);%7D)();" style="background:url(bookmark.png);display:block;width:239px;height:56px;">
+								<span style="font-size:0;filter:alpha(opacity=0);">谷歌网页翻译</span>
+							</a>
+							<br />
+							<pre>javascript:(function()%7Bvar%20url=window.location.href;window.open(%22https://translate.google.com.hk/translate?hl=zh-CN&sl=auto&tl=zh-CN&u=%22+url);%7D)();</pre>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="group row">
+						<h2>当前网址生成二维码</h2>
+						<br />
+						<div align="center">
+							<a href="javascript:(function()%7Bvar%20url=window.location.href;window.open(%22http://pan.baidu.com/share/qrcode?w=350&h=350&url=%22+url);%7D)();" style="background:url(bookmark.png);display:block;width:239px;height:56px;">
+								<span style="font-size:0;filter:alpha(opacity=0);">当前网址生成二维码</span>
+							</a>
+							<br />
+							<pre>javascript:(function()%7Bvar%20url=window.location.href;window.open(%22http://pan.baidu.com/share/qrcode?w=350&h=350&url=%22+url);%7D)();</pre>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
