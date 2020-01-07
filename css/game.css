@@ -1,0 +1,22 @@
+.game{
+    position: relative;
+    margin: 50px auto;
+    background: #666666;
+    border-radius: 5px;
+}
+.gt{
+    display: block;
+    margin: auto;
+}
+.ge{
+    margin: auto;
+}
+.gc{
+    width: 120px;
+    height: 120px;
+    margin: auto auto;
+    padding: 0px;
+}
+.gi{
+    margin: 0px;
+}
