@@ -16,13 +16,12 @@ $(function () {
     }
     Puzzle.prototype={
         init:function (url) {
-            $(".next").css("display","none");
+            $("#next").css("display","none");
             let self=this;        //this是Puzzle
             // $self=$(this);
             let $image=$(new Image());
             $image.on("load",function () {
                 //使用js对象可以直接调用proto方法
-                self.randomImg();
                 self.renderImg($image);
                 self.dragEvent(url);
                 //$self.attr("test1")();       //使用jq对象只能间接调用proto方法，这种方式无法正确识别this对象
@@ -35,6 +34,7 @@ $(function () {
             $("body").css("background","url("+url+")");
         },
         randomImg:function () {
+            this.imgArr=$("img");
             let $imgArr=this.imgArr;
             $imgArr.sort(function () {
                 return Math.random()-Math.random();
@@ -44,8 +44,13 @@ $(function () {
             let canvas=$("canvas");
             let $self=$(this);
             let index=0;
-            for (let i=0;i<3;i++){
-                for (let j=0;j<3;j++){
+            let width=$image[0].width;
+            let height=$image[0].height;
+            let dimension=initArea(width,height);
+            console.log(dimension);
+            this.randomImg();
+            for (let i=0;i<dimension.rowN;i++){
+                for (let j=0;j<dimension.lineN;j++){
                     /*
                     * @x,y图片中心坐标，不是图片左上角坐标
                     * @source图片地址，但是不可以传入jq对象
@@ -68,7 +73,7 @@ $(function () {
         },
         dragEvent:function () {
             let contain=$("#game");
-            let next=$(".next");
+            let next=$("#next");
             self=this;
             contain.on("dragstart",function (e) {
                 let target=e.target;
@@ -101,7 +106,7 @@ $(function () {
                 ev.preventDefault();
             });
 
-
+            next.off("click");
             next.on("click",function () {
                 self.showTip();
                 let pName=pics.eq(++currentP).text();
@@ -112,9 +117,8 @@ $(function () {
             })
         },
         showTip:function () {
-            let str=$(".next").text();
-            str="胜利！"+str;
-            $(".next").text(str);
+            let str=$("#next").text();
+            $("#next").text(str);
         },
         changeStep:function () {
             let step=$("#step").text();
@@ -136,7 +140,7 @@ $(function () {
             if (flag){
                 //alert("您通关了！！");
                 setTimeout(function () {
-                    $(".next").css("display","block");
+                    $("#next").css("display","block");
                 },200);
             }
 
@@ -147,3 +151,19 @@ $(function () {
     pt.init("pic/Valkyrie.jpg");
 
 });
+function initArea(width,height) {
+    let lineN=width/300>3?parseInt(width/300):3;
+    let rowN=height/300>3?parseInt(height/300):3;
+    let N=lineN*rowN;
+    $("#game").css("max-width",310*lineN);
+    $("#game").empty();
+    for(let i=0;i<N;i++){
+        let img=$("<img></img>").attr("draggable",true).attr("id",i).attr("alt","");
+        let li=$("<li></li>").append(img);
+        $("#game").append(li);
+    }
+    return {
+      "lineN":lineN,
+      "rowN":rowN
+    };
+}

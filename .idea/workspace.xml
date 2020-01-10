@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d446bb23-ad37-4513-b037-cd6c7813cbaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jCanvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery-3.4.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/puzzle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paint.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pic.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pic/BlackSword.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pic/Valkyrie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pic/wyj.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JDpractise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JDpractise.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/puzzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/puzzle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pic.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +97,9 @@
       <workItem from="1578469439531" duration="130000" />
       <workItem from="1578473121557" duration="260000" />
       <workItem from="1578568208423" duration="5845000" />
-      <workItem from="1578574433309" duration="4021000" />
+      <workItem from="1578574433309" duration="4730000" />
+      <workItem from="1578621088213" duration="603000" />
+      <workItem from="1578652392593" duration="6966000" />
     </task>
     <servers />
   </component>
