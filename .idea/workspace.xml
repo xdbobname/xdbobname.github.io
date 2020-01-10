@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/puzzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/puzzle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pic.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +98,8 @@
       <workItem from="1578568208423" duration="5845000" />
       <workItem from="1578574433309" duration="4730000" />
       <workItem from="1578621088213" duration="603000" />
-      <workItem from="1578652392593" duration="6966000" />
+      <workItem from="1578652392593" duration="8071000" />
+      <workItem from="1578663687122" duration="55000" />
     </task>
     <servers />
   </component>

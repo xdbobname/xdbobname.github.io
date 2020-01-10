@@ -31,7 +31,12 @@ $(function () {
                 .css("width",1920).css("height",1080)
                 .css("z-index",-100).css("position","fixed")
                 .css("top",0).css("left",0);
-            $("body").css("background","url("+url+")");
+            $("body").css({
+                "background":"url("+url+")",
+                "background-size":"cover",
+                "width":"100%",
+                "height":"100%"
+            });
         },
         randomImg:function () {
             this.imgArr=$("img");
