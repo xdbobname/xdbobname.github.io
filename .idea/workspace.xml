@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d446bb23-ad37-4513-b037-cd6c7813cbaa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PuzzleMain.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/QRCode.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/puzzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/puzzle.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
       <list>
         <option value="CSS File" />
         <option value="XSLT Stylesheet" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -37,7 +38,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1W5rP2A0lJPzNOM2aWsdvE1nKnd" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -47,7 +50,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -55,11 +58,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\develop\parcTice\xdbobname.github.io\js" />
       <recent name="F:\develop\parcTice\xdbobname.github.io\pic" />
       <recent name="F:\develop\parcTice\xdbobname.github.io" />
       <recent name="F:\develop\parcTice\JDpractise\pic" />
       <recent name="F:\develop\parcTice\JDpractise\js" />
-      <recent name="F:\develop\parcTice\JDpractise" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -99,7 +102,10 @@
       <workItem from="1578574433309" duration="4730000" />
       <workItem from="1578621088213" duration="603000" />
       <workItem from="1578652392593" duration="8071000" />
-      <workItem from="1578663687122" duration="55000" />
+      <workItem from="1578663687122" duration="683000" />
+      <workItem from="1580015065496" duration="1311000" />
+      <workItem from="1580965249815" duration="52000" />
+      <workItem from="1581670032093" duration="157000" />
     </task>
     <servers />
   </component>
@@ -128,10 +134,10 @@
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="443" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1549.831@0.0.1549.831" timestamp="1578575371912" />
-    <state x="505" y="115" key="FileChooserDialogImpl" timestamp="1578473381005">
+    <state x="505" y="115" key="FileChooserDialogImpl" timestamp="1580965279290">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="505" y="115" key="FileChooserDialogImpl/0.0.1549.831@0.0.1549.831" timestamp="1578473381005" />
+    <state x="505" y="115" key="FileChooserDialogImpl/0.0.1549.831@0.0.1549.831" timestamp="1580965279290" />
     <state x="366" y="0" key="SettingsEditor" timestamp="1578577007133">
       <screen x="0" y="0" width="1549" height="831" />
     </state>

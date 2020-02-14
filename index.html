@@ -2,80 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>小仙女每天都要加油鸭！！！</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <style>
-        #next{
-            display: none;
-            width: 600px;
-            height: 400px;
-            margin: auto;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            font-family: 微软雅黑;
-            font-size: 48px;
-            text-align: center;
-            line-height: 400px;
-            background:white;
-            z-index: 999;
-        }
-        .cat{
-            margin-top: 50px;
-        }
-        .count{
-            width: 800px;
-            margin:auto;
-            font-family: 微软雅黑;
-            font-size: 48px;
-            color:white;
-        }
-        .count div{
-            display: inline-block;
-            margin-bottom: 50px;
-        }
-        #can{
-            display:none;
-        }
-        #game{
-            max-width: 940px;
-            margin:auto;
-        }
-        #game li{
-            display: inline-block;
-        }
-    </style>
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/jCanvas.js"></script>
-    <script src="js/puzzle.js"></script>
+    <title>QRCODETEST</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/QRCode.js"></script>
 </head>
 <body>
-<div id="next">
-    <span>胜利！点击进入下一关</span>
-</div>
-<div>
-    <canvas id="can" width="300" height="300"></canvas>
-    <div class="cat">
-        <div class="count">
-            <div>第</div>
-            <div id="step">0</div>
-            <div>步</div>
-        </div>
-        <ul id="game">
-            <li><img src="" alt="" draggable="true" id="0"></li>
-            <li><img src="" alt="" draggable="true" id="1"></li>
-            <li><img src="" alt="" draggable="true" id="2"></li>
-            <li><img src="" alt="" draggable="true" id="3"></li>
-            <li><img src="" alt="" draggable="true" id="4"></li>
-            <li><img src="" alt="" draggable="true" id="5"></li>
-            <li><img src="" alt="" draggable="true" id="6"></li>
-            <li><img src="" alt="" draggable="true" id="7"></li>
-            <li><img src="" alt="" draggable="true" id="8"></li>
-        </ul>
-    </div>
-</div>
+<div id="code"></div>
+<input type="text" id="ct">
+<button onclick="createQrcode()">Create</button>
+<script>
+    function createQrcode(){
+        let str=utf16to8($("#ct").val());
+        console.log(str);
+        $("#code").qrcode(str);
+    }
+    function utf16to8(str) {
+        var out, i, len, c;
+        out = "";
+        len = str.length;
+        for(i = 0; i < len; i++) {
+            c = str.charCodeAt(i);
+            if ((c >= 0x0001) && (c <= 0x007F)) {
+                out += str.charAt(i);
+            } else if (c > 0x07FF) {
+                out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));
+                out += String.fromCharCode(0x80 | ((c >>  6) & 0x3F));
+                out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F));
+            } else {
+                out += String.fromCharCode(0xC0 | ((c >>  6) & 0x1F));
+                out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F));
+            }
+        }
+        return out;
+    }
+</script>
 </body>
 </html>
